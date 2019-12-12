@@ -71,7 +71,7 @@ edges_num = int(file.read(3))
 edge_list = []
 for edge in islice(file, 0, edges_num):
     ep = []
-    for top in edge.split(' '):
+    for top in edge.split(' ', 1):
         ep.append(int(top))
     edge_list.append(ep)
 print("Кількість вершин: " + str(tops_num))
