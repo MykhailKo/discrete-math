@@ -111,11 +111,11 @@ for edge in islice(file, 0, edges_num):
         ep.append(int(top))
     edge_list.append(ep)
 if edges_num != len(edge_list):
-    print("!!!Дана програма використовує python модуль numpy, "
-          "\nякщо він не встановлений на вашому комп'ютері виконайте команду"
-          "\npip install numpy!!!\n")
     print("\nКількість ребер не співпадає у із заданим списком, перевірте файл condition.txt")
     exit()
+print("!!!Дана програма використовує python модуль numpy, "
+          "\nякщо він не встановлений на вашому комп'ютері виконайте команду"
+          "\npip install numpy!!!\n")
 print("Кількість вершин: " + str(tops_num))
 print("Кількість ребер: " + str(edges_num))
 print("Список граней: ", edge_list)
