@@ -1,6 +1,5 @@
 from itertools import islice
 
-
 def do_bfs(edges, tops):
     start = int(input("Введіть вершину початок: "))
     if start not in range(1, tops+1):
@@ -56,8 +55,9 @@ def do_dfs(edges, tops):
 
 
 file = open('condition.txt')
-tops_num = int(file.read(1))
-edges_num = int(file.read(3))
+ar = file.readline().split(' ', 1)
+tops_num = int(ar[0])
+edges_num = int(ar[1])
 edge_list = []
 for edge in islice(file, 0, edges_num):
     ep = []
